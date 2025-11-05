@@ -1,0 +1,122 @@
+html * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-title {
+    font-weight: bold;
+    font-size: 2.5em;
+    color: lightskyblue;
+}
+
+.nav-li {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.nav-li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 450;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem
+}
+
+.header-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-button a {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+}
+
+.header-button a:hover {
+
+    scale: 1.05;
+}
+
+body {
+
+    margin: 0 auto;
+    padding: 0 auto;
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: lightskyblue;
+    background-color: white;
+
+    flex-grow: 1;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+
+    color: white;
+    font-weight: 450;
+    background-color: rgb(120, 120, 120);
+    box-shadow: -1px 0 5em 5em rgba(0, 0, 0, 0.15);
+}
+
+.card {
+
+    height: 15em;
+    width: 15em;
+    background-color: white;
+    border-radius: 25px;
+
+    transition: 0.3s;
+    box-shadow: -1px 0 1em 1em rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0 1em 1em rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1px 1em rgba(0, 0, 0, 0.1);
+    box-shadow: -0 -1px 1em 1em rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+
+    scale: 1.05;
+}
