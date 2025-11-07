@@ -1,9 +1,11 @@
 html * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-size: 10px;
 }
 
 header {
-    margin-top: 1rem;
+    margin-top: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -12,7 +14,7 @@ header {
 
 .main-title {
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 5em;
     color: lightskyblue;
     text-decoration: none;
 }
@@ -21,12 +23,13 @@ header {
     list-style: none;
     display: inline-flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .nav-li a {
     text-decoration: none;
     color: black;
+    font-size: 1.75em;
     font-weight: 450;
 }
 
@@ -34,27 +37,29 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem
+    gap: 4rem
 }
 
 .header-button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    gap: 2em;
 }
 
 .header-button a {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+   
+    padding: 0.75em 2em;
+
     color: white;
+    font-size: 1.5em;
     font-weight: 600;
+    text-decoration: none;
+
     background-color: lightskyblue;
+    
     border-radius: 10px;
     border: none;
-    text-decoration: none;
 }
 
 .header-button a:hover {
@@ -137,8 +142,8 @@ footer {
 
 .card {
 
-    height: 30em;
-    width: 50em;
+    height: 60em;
+    width: 100em;
     background-color: white;
     border-radius: 25px;
 
@@ -148,7 +153,7 @@ footer {
     box-shadow: 0 0 1px 1em rgba(0, 0, 0, 0.05);
     box-shadow: -0 -1px 1em 1em rgba(0, 0, 0, 0.05);
 
-    animation: movingCard 30s linear infinite;
+    animation: movingCard 60s linear infinite;
 
     cursor: pointer;
 }
@@ -159,7 +164,7 @@ footer {
 
 .card:hover {
 
-    border:3px solid lightskyblue;
+    border:5px solid lightskyblue;
 }
 
 .card-image {
@@ -179,43 +184,62 @@ footer {
 .card-background {
 
     position: absolute;
-    margin-left: 37.5%;
+    margin-left: 32.25%;
     border-radius: 20px;
     height: 100%;
-    width: 10em;
+    width: 15em;
 
     filter: blur(5px);
     opacity: 0.75;
 
-    background: linear-gradient(90deg ,rgba(100,100,100,1), rgba(100,100,100,0));
+    background: linear-gradient(90deg ,rgba(100,100,100,1), rgba(100,100,100,0.5), rgba(100,100,100,0));
 }
 
 .card-textbox {
 
     position: absolute;
-    background-color: rgb(100, 100, 100);
+    background-color: rgba(100, 100, 100, 0.9);
 
     border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 
     padding-left: 1.5em;
     padding-right: 1.5em
     ;
     height: 100%;
-    width: 37.5%;
+    width: 33%;
 }
 
 .card-header {
 
-    font-size: 3em;
-    color: lightskyblue;
+    color: white;
+    font-size: 4em;
+    font-weight: 500;
+
     text-decoration: none;
+    border-bottom: 0.075em lightskyblue solid;
 
 }
 
 .card-body {
 
-    font-size: 1em;
-    color: lightskyblue;
+    font-size: 2em;
+    color: white;
     text-decoration: none;
 
+}
+
+#card-strong {
+
+    color: lightskyblue;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+#card-small {
+
+    color: lightskyblue;
+    font-size: 0.75em;
+    font-weight: 500;
 }
