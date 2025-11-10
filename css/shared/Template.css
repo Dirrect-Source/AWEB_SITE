@@ -1,0 +1,124 @@
+html * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+header {
+
+    z-index: 99;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    position: sticky;
+    
+    margin-top: 2em;
+    padding-bottom: 2em;
+    
+    border-bottom: 0.2em rgb(200, 200, 200) solid;
+
+}
+
+.main-title {
+    font-weight: bold;
+    font-size: 5em;
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+.nav-li {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.nav-li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.75em;
+    font-weight: 450;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem
+}
+
+.header-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+
+.header-button a {
+   
+    padding: 0.75em 2em;
+
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+
+    background-color: lightskyblue;
+    
+    border-radius: 10px;
+    border: none;
+}
+
+.header-button a:hover {
+
+    scale: 1.05;
+}
+
+body {
+    
+    margin: 0 auto;
+    padding: 0 auto;
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color: lightskyblue;
+    background-color: white;
+
+    flex-grow: 1;
+}
+
+footer {
+
+    z-index: 99;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 100%;
+
+    color: white;
+    font-weight: 450;
+    background-color: rgb(100, 100, 100);
+    box-shadow: -1px 0 5em 5em rgba(0, 0, 0, 0.15);
+}
