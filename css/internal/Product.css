@@ -17,6 +17,7 @@ body {
 
     display: flex;
     flex-direction: column;
+
     gap: 10rem;
 }
 
@@ -64,6 +65,11 @@ body {
 .model-description {
     font-weight: 600;
     font-size: large;
+}
+
+.stars {
+    font-size: 3em;
+    text-align: center;
 }
 
 .buy-button {

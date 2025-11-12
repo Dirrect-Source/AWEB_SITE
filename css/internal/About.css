@@ -1,0 +1,103 @@
+html * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body{
+
+    height: 100vh;
+    width: 100%;
+
+    top: 0;
+    background: url("../../shared_media/images/reallytufffondecran.png") no-repeat fixed;
+    background-size: cover;
+}
+
+main{
+
+    margin-top: 35%;
+    padding-top: 10em;
+    padding-left: 25%;
+    width: 100%;
+    
+    flex-grow: 1;
+    
+    background: linear-gradient(90deg, rgb(100,100,100), rgb(80, 80, 80));;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    border-top: 0.2em rgb(200, 200, 200) solid;
+}
+
+main > a {
+
+    height: 1.5em;
+    width: 1.5em;
+
+    position: relative;
+    font-size: 5em;
+
+    color: white;
+    background-color: lightskyblue;
+    border-radius: 60%;
+    text-align: center;
+    text-decoration: none;
+}
+
+strong {
+
+    font-size: 1.25em;
+    color: lightskyblue;
+}
+
+h2 {
+
+    color: white;
+    font-size: 5em;
+    font-weight: 500;
+
+}
+
+h3 {
+
+    color: white;
+    font-size: 2em;
+    font-weight: 350;
+}
+
+main > section {
+
+    width: 100%;
+}
+
+main > section > p {
+
+    color: white;
+    font-size: 2em;
+    font-weight: 350;
+}
+
+main > section > ul > li::before {
+
+    content: "-";
+    color: white;
+    padding-right: 1em;
+
+}
+
+main > section > ul > li {
+
+    color: lightskyblue;
+    font-size: 2em;
+    list-style: none;
+}
+
+main > section > p > strong {
+
+    font-size: 1.05em;
+}

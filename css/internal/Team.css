@@ -1,19 +1,269 @@
-.bubble-frame {
-    width: 100%;
-    height: 100%;
+html * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-size: 10px;
+}
 
-    margin-top: 10em;
+@media (min-width: 1000px) {
+
+    .bubble-frame {
+        width: 100%;
+        height: 100%;
+
+        margin-top: 10em;
+
+        gap: 10em;
+    }
+
+    .bubble {
+        height: 25em;
+        width: 25em;
+    }
+
+    .bubble:hover {
+        scale: 1.5;
+    }
+
+    .nametag {
+        height: 25%;
+        width: 80%;
+    }
+
+    .nametag div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bubble img {
+        margin-bottom: 0.6em;
+    }
+
+    .bubble-name {
+        font-size: 1em;
+    }
+
+    .bubble-job {
+        font-size: 1.5em;
+    }
+
+    main>h2 {
+        width: 100%;
+        height: auto;
+
+        font-size: 5em;
+    }
+
+    .last-message {
+        font-size: 5em;
+    }
+
+
+}
+
+@media (max-width: 999px) and (min-width: 500px) {
+
+    .bubble-frame {
+        width: 100%;
+        height: 100%;
+
+        margin-top: 10em;
+
+        gap: 5em;
+    }
+
+    .bubble {
+        height: 25em;
+        width: 25em;
+    }
+
+    .bubble:hover {
+        scale: 1.5;
+    }
+
+    .nametag {
+        height: 25%;
+        width: 80%;
+    }
+
+    .nametag div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bubble img {
+        margin-bottom: 0.6em;
+    }
+
+    .bubble-name {
+        font-size: 1em;
+    }
+
+    .bubble-job {
+        font-size: 1.5em;
+    }
+
+    main>h2 {
+        width: 100%;
+        height: auto;
+
+        font-size: 5em;
+    }
+
+    .last-message {
+        font-size: 5em;
+    }
+
+
+}
+
+@media (max-width: 499px) {
+
+    .bubble-frame {
+        width: 100%;
+        height: 100%;
+
+        margin-top: 10em;
+
+        gap: 10em;
+    }
+
+    .bubble {
+        height: 25em;
+        width: 80%;
+    }
+
+    .bubble:hover {
+        scale: 1.5;
+    }
+
+    .nametag {
+        height: 25%;
+        width: 80%;
+    }
+
+    .nametag div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bubble img {
+        margin-bottom: 0.6em;
+    }
+
+    .bubble-name {
+        font-size: 1em;
+    }
+
+    .bubble-job {
+        font-size: 1.5em;
+    }
+
+    main>h2 {
+        width: 100%;
+        height: auto;
+
+        font-size: 5em;
+    }
+
+    .last-message {
+        font-size: 5em;
+    }
+
+
+}
+
+
+.bubble-frame {
+    /* width: 100%;
+    height: 100%; */
+
+    /* margin-top: 10em; */
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10em;
+    /* gap: 10em; */
 
     justify-content: center;
 }
 
 .bubble {
-    border: 2px solid black;
-    height: 15em;
-    width: 15em;
+    border: 0.5em solid lightskyblue;
+    /* height: 25em;
+    width: 25em; */
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.bubble:hover {
+    scale: 1.5;
+}
+
+.nametag {
+    border: 0.5em solid lightskyblue;
+    border-radius: 20px;
+
+    z-index: 2;
+    background-color: white;
+
+    /* height: 25%;
+    width: 80%; */
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.nametag div {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+
+    /* width: 100%;
+    height: 100%; */
+}
+
+.bubble img {
+    border-radius: 20px;
+
+    z-index: 1;
+
+    position: absolute;
+
+    /* margin-bottom: 0.6em; */
+}
+
+
+.bubble-job {
+    text-align: center;
+    /* font-size: 1.5em; */
+    font-weight: bold;
+}
+
+main>h2 {
+    /* width: 100%;
+    height: auto; */
+
+    text-align: center;
+    /* font-size: 5em; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.last-message {
+    /* font-size: 5em; */
+    font-weight: bold;
 }

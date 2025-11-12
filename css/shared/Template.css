@@ -15,8 +15,10 @@ header {
     
     position: sticky;
     
-    margin-top: 2em;
+    padding-top: 2em;
     padding-bottom: 2em;
+    
+    background-color: white;
     
     border-bottom: 0.2em rgb(200, 200, 200) solid;
 
@@ -78,7 +80,7 @@ header {
 }
 
 body {
-    
+
     margin: 0 auto;
     padding: 0 auto;
 
