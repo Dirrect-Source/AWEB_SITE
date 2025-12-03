@@ -8,79 +8,159 @@ html * {
     scroll-behavior: smooth;
 }
 
-header {
+@media (min-width: 1000px) {
 
-    z-index: 99;
+    header {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    
-    position: sticky;
-    
-    padding-top: 2em;
-    padding-bottom: 2em;
-    
-    background-color: white;
-    
-    border-bottom: 0.2em rgb(200, 200, 200) solid;
+        z-index: 99;
 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+        position: sticky;
+        
+        padding-top: 2em;
+        padding-bottom: 2em;
+        
+        background-color: white;
+        
+        border-bottom: 0.2em rgb(200, 200, 200) solid;
+    }
+
+    .main-title::before {
+        content: "Placeholder_";
+        font-weight: bold;
+        font-size: 5em;
+        color: lightskyblue;
+        text-decoration: none;
+    }
+
+    .nav-li {
+        list-style: none;
+        display: inline-flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .nav-li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.75em;
+        font-weight: 450;
+    }
+
+    .header-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem
+    }
+
+    .header-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .header-button a {
+    
+        padding: 0.75em 2em;
+
+        color: white;
+        font-size: 1.5em;
+        font-weight: 600;
+        text-decoration: none;
+
+        background-color: lightskyblue;
+        
+        border-radius: 10px;
+        border: none;
+    }
+
+    .header-button a:hover {
+
+        scale: 1.05;
+    }
+}
+
+@media (max-width: 999px) {
+
+    header {
+
+        z-index: 99;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+        position: sticky;
+        
+        padding-top: 2em;
+        padding-bottom: 2em;
+        
+        background-color: white;
+        
+        border-bottom: 0.2em rgb(200, 200, 200) solid;
+    }
+
+    .main-title::before {
+        content: "P_";
+        font-weight: bold;
+        font-size: 5em;
+        color: lightskyblue;
+        text-decoration: none;
+    }
+
+    .nav-li {
+        opacity: 0;
+    }
+
+    .nav-li a {
+        opacity: 0;
+    }
+
+    .header-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem
+    }
+
+    .header-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .header-button a {
+    
+        padding: 0.75em 2em;
+
+        color: white;
+        font-size: 1.5em;
+        font-weight: 600;
+        text-decoration: none;
+
+        background-color: lightskyblue;
+        
+        border-radius: 10px;
+        border: none;
+    }
+
+    .header-button a:hover {
+
+        scale: 1.05;
+    }
 }
 
 .main-title {
-    font-weight: bold;
-    font-size: 5em;
-    color: lightskyblue;
+
     text-decoration: none;
-}
-
-.nav-li {
-    list-style: none;
-    display: inline-flex;
-    flex-direction: row;
-    gap: 4rem;
-}
-
-.nav-li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.75em;
-    font-weight: 450;
-}
-
-.header-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4rem
-}
-
-.header-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2em;
-}
-
-.header-button a {
-   
-    padding: 0.75em 2em;
-
-    color: white;
-    font-size: 1.5em;
-    font-weight: 600;
-    text-decoration: none;
-
-    background-color: lightskyblue;
-    
-    border-radius: 10px;
-    border: none;
-}
-
-.header-button a:hover {
-
-    scale: 1.05;
 }
 
 body {
