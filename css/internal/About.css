@@ -27,7 +27,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start;    
 
     border-top: 0.2em rgb(200, 200, 200) solid;
 }
