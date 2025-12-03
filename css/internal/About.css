@@ -52,7 +52,7 @@ main > a {
 
 strong {
 
-    font-size: 1.25em;
+    font-size: 1em;
     color: lightskyblue;
 }
 
@@ -100,5 +100,6 @@ main > section > ul > li {
 
 main > section > p > strong {
 
-    font-size: 1.05em;
+    font-size: 1em;
+    color: lightskyblue;
 }
