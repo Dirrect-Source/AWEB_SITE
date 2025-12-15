@@ -1,0 +1,48 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+.checkout-all {
+    display: flex;
+    flex-direction: column;
+
+    width: 20vw;
+    height: 40vh;
+
+    justify-content: center;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+.checkout-all input {
+    padding: 0.5em;
+    margin-bottom: 3em;
+
+    border: 3px solid lightskyblue;
+
+    border-radius: 7px;
+}
+
+
+.checkout-all button {
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+
+    font-weight: bold;
+
+    padding: 0.5em;
+}
+
+.checkout-all button:hover {
+    border: 1px solid black;
+}
